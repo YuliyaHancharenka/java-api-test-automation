@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="REST Suite" annotations="JDK" parallel="tests">
+
+    <test name="google.gist">
+        <classes>
+            <class name="gist.tests.GetGistTest"/>
+            <class name="gist.tests.StarGistTest"/>
+            <class name="gist.tests.ForkGistTest"/>
+            <class name="gist.tests.CRUDGistTest"/>
+        </classes>
+    </test>
+</suite>
